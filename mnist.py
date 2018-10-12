@@ -1,4 +1,5 @@
 from __future__ import print_function
+from profiler import profiler_summaries
 
 import math
 import os
@@ -129,6 +130,7 @@ def main(unused_argv):
     data = read_data_sets(FLAGS.data_dir,
             one_hot=False,
             fake_data=False)
+    profiler_summaries()
     logits = mnist.inference(images, FLAGS.hidden1, FLAGS.hidden2)
     loss = mnist.loss(logits, labels)
     loss = tf.Print(loss, [loss], message="Loss = ")
