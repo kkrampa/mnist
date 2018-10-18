@@ -1,4 +1,4 @@
-t# MNIST on Clusterone
+at# MNIST on Clusterone
 <p align="center">
 <img src="co_logo.png" alt="Clusterone" width="200">
 <br>
